@@ -76,6 +76,7 @@ public class Main {
         Drawable d1 = (Drawable) circle;
         Drawable d2 = (Drawable) rectangle;
 
+
         d1.draw();
         circle.displayColor();
         System.out.println("Area: " + circle.area());

@@ -50,9 +50,15 @@ public  class Deletion{
         TreeNode root=new TreeNode(10);
         root.left=new TreeNode(11);
         root.left=new TreeNode(9);
-        root.right=new TreeNode(11);
-        root.right=new TreeNode(11);
-        root.left=new TreeNode(11);
+        root.right=new TreeNode(7);
+        root.right.left=new TreeNode(15);
+        root.right.left=new TreeNode(8);
+        System.out.println("Inorder before insertion");
+        inorder(root);
+        root=delete(root,11);
+        System.out.println("Inorder after deletion");
+        inorder(root);
+
 
 
 

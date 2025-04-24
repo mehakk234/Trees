@@ -8,10 +8,9 @@
 //encapsulation and abstraction -- Data hiding
 // Interface
 interface Drawable {
-    void draw(); // Abstract method
+    void draw(); 
 }
 
-// Abstract class
 abstract class Shape {
     String color;
 
@@ -19,14 +18,14 @@ abstract class Shape {
         this.color = color;
     }
 
-    abstract double area(); // Abstract method
+    abstract double area(); 
 
     void displayColor() {
         System.out.println("Color: " + color);
     }
 }
 
-// Concrete class 1
+
 class Circle extends Shape implements Drawable {
     double radius;
 
@@ -46,7 +45,7 @@ class Circle extends Shape implements Drawable {
     }
 }
 
-// Concrete class 2
+
 class Rectangle extends Shape implements Drawable {
     double width, height;
 
@@ -67,7 +66,7 @@ class Rectangle extends Shape implements Drawable {
     }
 }
 
-// Main class
+
 public class Main {
     public static void main(String[] args) {
         Shape circle = new Circle("Red", 5.0);
